@@ -1,5 +1,5 @@
 {
-  "name": "my-hello-lib",
+  "name": "@aka70/my-hello-lib",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
