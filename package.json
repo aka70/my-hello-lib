@@ -6,6 +6,7 @@
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
   "scripts": {
+    "test": "jest",
     "prebuild": "rimraf dist",
     "build": "run-p build:*",
     "build:common": "tsc",
