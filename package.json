@@ -5,7 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "tsc"
+    "build": "run-p build:*",
+    "build:common": "tsc",
+    "build:esm": "tsc -p tsconfig.esm.json"
   },
   "files": [
     "dist"
@@ -15,6 +17,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^18.11.18",
+    "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.4"
